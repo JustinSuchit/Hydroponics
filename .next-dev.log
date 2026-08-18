@@ -1,0 +1,11 @@
+
+> hydroponics-landing-page@0.1.0 dev
+> next dev -p 3000
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.137.1:3000
+✓ Ready in 1684ms
+Creating turbopack project { dir: 'C:\\Users\\AMCOL\\Hydroponics', testMode: true }
+
+○ Compiling / ...

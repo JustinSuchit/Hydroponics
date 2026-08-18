@@ -1,6 +1,6 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element -- Local placeholder imagery intentionally avoids Vinext runtime image optimization. */
+import Image from "next/image";
 import {
   Camera,
   Droplets,
@@ -224,12 +224,12 @@ export default function Home() {
           <div className="hero-visual reveal">
             <div className="image-glow" aria-hidden="true" />
             <div className="image-card">
-              <img
+              <Image
                 src={hydroponicsImage}
                 alt="Hydroponic lettuce growing in a bright modern greenhouse"
                 width={1536}
                 height={1024}
-                fetchPriority="high"
+                priority
               />
             </div>
           </div>
@@ -263,12 +263,11 @@ export default function Home() {
       <section className="section about-band" id="about">
         <div className="container about-grid">
           <div className="about-image reveal">
-            <img
+            <Image
               src={hydroponicsImage}
               alt="Rows of fresh hydroponic greens inside a greenhouse"
               width={1536}
               height={1024}
-              loading="lazy"
             />
           </div>
           <div className="section-copy reveal">
@@ -326,12 +325,11 @@ export default function Home() {
             {solutions.map((solution, index) => (
               <article className="solution-card" key={solution.title}>
                 <div className={`solution-image solution-${index + 1}`}>
-                  <img
+                  <Image
                     src={hydroponicsImage}
                     alt={`${solution.title} hydroponics preview`}
                     width={768}
                     height={512}
-                    loading="lazy"
                   />
                 </div>
                 <div className="solution-body">
