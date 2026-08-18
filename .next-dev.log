@@ -9,3 +9,4 @@
 Creating turbopack project { dir: 'C:\\Users\\AMCOL\\Hydroponics', testMode: true }
 
 ○ Compiling / ...
+ GET / 200 in 110ms (next.js: 11ms, application-code: 99ms)
